@@ -1,0 +1,520 @@
+<!-- <h1>ĐÂY LÀ TRANG CHỦ SAU KHI ĐĂNG NHẬP</h1>
+<a href="logout.php">ĐĂNG XUẤT</a> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoonBakery</title>
+
+    <!-- all css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Pacifico'"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <!--  Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+  <body>
+    <div class="app">
+      <!-- header -->
+      <header class="header">
+        <div class="header-container grid wide">
+          <div class="header__nav row">
+            <div class="col l-0 m-3 c-2">
+              <div class="mobile-header__bar">
+                <input type="checkbox" hidden="" id="mobile-nav-appear" class="click-header__bar-icon">
+                <label for="mobile-nav-appear" class="header__bar-icon"></label>
+              
+                <input type="checkbox" hidden="" id="mobile-nav-appear" class="click-header__bar-icon">
+                <label for="mobile-nav-appear" class="mobile-header__list">
+                  <li class="mobile-header__item">
+                      <label for="subnav-appear">
+                         <a href="">Trang Chủ</a> 
+                      </label>
+                     
+                  </li>
+                  <li class="mobile-header__item">
+                      <label for="subnav-appear2">
+                          Bánh
+                          <i class="fas fa-chevron-right mobile-header__item-icon-right"></i>
+                      </label>
+                      
+                      <input type="checkbox" hidden="" id="subnav-appear2" class="click-subnav">
+                      <ul class="mobile-header__item-list">
+                          <li class="mobile-header__item-item">
+                              <a href="#">PanCake</a>
+                          </li>
+                          <li class="mobile-header__item-item">
+                              <a href="#">Bánh Mì</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="mobile-header__item">
+                      <label for="subnav-appear3">
+                          Thức Uống
+                          <i class="fas fa-chevron-right mobile-header__item-icon-right"></i>
+                      </label>
+                      
+                      <input type="checkbox" hidden="" id="subnav-appear3" class="click-subnav2">
+                      <ul class="mobile-header__item-list">
+                          <li class="mobile-header__item-item">
+                              <a href="#">Cafe</a>
+                          </li>
+                          <li class="mobile-header__item-item">
+                              <a href="#">Cocktail</a>
+                          </li>
+                          <li class="mobile-header__item-item">
+                              <a href="#">Trà Sửa</a>
+                          </li>
+              
+                      </ul>
+                  </li>
+                  <li class="mobile-header__item">
+                      <label for="subnav-appear4">
+                          <a href=""> liên Hệ</a>
+                      </label>
+                    
+                  </li>
+                  <li class="mobile-header__item">
+                    <label for="subnav-appear4">
+                        <a href="">Phản Hồi</a> 
+                    </label>
+                   
+                </li>
+                <li class="mobile-header__item">
+                  <label for="subnav-appear4">
+                      <a href="">Thông Tin</a> 
+                  </label>
+                
+              </li>
+              </label>
+              </div>
+            </div>
+
+            <div class="col l-2 m-6 c-7">
+              <div class="header__nav-logo">
+                <a href="index.html">
+                  <img src="./assets/img/banner/logomoon.png" style="width: 140px" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="col l-8 m-0 c-0">
+              <nav class="header__nav-menu">
+                <ul class="header__nav-menu__list">
+                  <li class="header__nav-menu-item">
+                    <a href="" class="header__nav-menu--link">Trang Chủ</a>
+                  </li>
+                  <li class="header__nav-menu-item">
+                    <a href="" class="header__nav-menu--link">Bánh</a>
+                    <!-- shop none -->
+                    <ul class="navbar__shop">
+                      <li class="navbar__shop--item">
+                        <a
+                          href="#"
+                          class="navbar__shop--link"
+                          >PanCake</a
+                          >
+                      </li>
+                      <li class="navbar__shop--item">
+                        <a href="#" class="navbar__shop--link"
+                          >Bánh Mì</a>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="header__nav-menu-item">
+                    <a href="" class="header__nav-menu--link">
+                      Thức Uống
+                    </a>
+                    <ul class="navbar__page">
+                      <li class="navbar__page--item">
+                        <a href="#" class="navbar__page--link">
+                          Cafe
+                        </a>
+                      </li>
+                      <li class="navbar__page--item">
+                        <a href="#" class="navbar__page--link">
+                          Cocktail
+                        </a>
+                      </li>
+                      <li class="navbar__page--item">
+                        <a href="#" class="navbar__page--link">
+                          Trà Sữa
+                        </a>
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  <li class="header__nav-menu-item">
+                    <a href="" class="header__nav-menu--link">liên hệ</a>
+                  </li>
+                  <li class="header__nav-menu-item">
+                    <a href="" class="header__nav-menu--link">Phản Hồi</a>
+                  </li>
+                  <li class="header__nav-menu-item">
+                    <a href="#contact-area" class="header__nav-menu--link">Thông Tin</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col l-2 m-3 c-3">
+              <div class="header__nav-warp">
+                <div class="header__nav-warp-search">
+                  <a href="#" class="header__nav-warp-link">
+                    <i class="header__nav-warp-icon fas fa-search"></i>
+                  </a>
+                  <div class="header__nav-warp-search-form">
+                    <form action="# " method="post">
+                      <input
+                        type="text"
+                        placeholder="Tìm Kiếm ..."
+                        class="header__nav-warp-search-form--input"
+                      />
+                      <button class="btn btn-nav-search" type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <div class="header__nav-warp-login">
+                  <a href="#" class="header__nav-warp-link">
+                    <i class="header__nav-warp-icon far fa-user"></i>
+                  </a>
+                </div>
+                <div class="header__nav-warp-login">
+                  <a href="#" class="header__nav-warp-link">
+                    <i class="header__nav-warp-icon fas fa-shopping-cart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      </div>
+
+      <!-- =================== Start Slider================== -->
+      <div id="area-slider">
+         <nav class="slider-area">
+          <div class="c">
+
+            <input type="radio" name="a" id="cr-1" checked>
+            <label for="cr-1" style="--hue: 32"></label>
+            <div class="ci" style="--z: 5">
+              <h2 class="ch" style="--h: 32; --s: 80%; --l: 90%">Welcome To Moonbakery</h2>
+              <img src="./assets/img/banner/slider1.jpg" alt="Snow on leafs">
+            </div>
+          
+            <input type="radio" name="a" id="cr-2">
+            <label for="cr-2" style="--hue: 82"></label>
+            <div class="ci" style="--z: 4">
+              <h2 class="ch" style="--h: 82; --s: 80%; --l: 90%"></h2>
+              <img src="./assets/img/banner/sldier2.jpg" alt="Trees">
+            </div>
+          
+            <input type="radio" name="a" id="cr-3">
+            <label for="cr-3" style="--hue: 40"></label>
+            <div class="ci" style="--z: 3">
+              <h2 class="ch" style="--h: 40; --s: 100%; --l: 89%"></h2>
+              <img src="./assets/img/banner/slider3.jpg" alt="Mountains and houses">
+            </div>
+          
+            <input type="radio" name="a" id="cr-4">
+            <label for="cr-4" style="--hue: 210"></label>
+            <div class="ci" style="--z: 2">
+              <h2 class="ch" style="--h: 210; --s: 70%; --l: 90%"></h2>
+              <img src="./assets/img/banner/slider4.jpg" alt="Sky and mountains">
+            </div>
+
+            <input type="radio" name="a" id="cr-5">
+            <label for="cr-5" style="--hue: 20"></label>
+            <div class="ci" style="--z: 1">
+              <h2 class="ch" style="--h: 100; --s: 100%; --l: 70%"></h2>
+              <img src="./assets/img/banner/slider5.jpg" alt="Sky and mountains">
+            </div>
+          </div>
+        </nav>
+        </div>
+<!-- ================================End Slider========================================== -->
+
+<!-- ===================================Start Menu================================== -->
+<div class="title"><h1>Welcome to Moonbakery's menu</h1></div>
+<div class="card-area">
+  <div class="logomenu">
+    <img src="./assets/img/banner/bread (1).png" alt="" class="img-responsive">
+    <a href="">Xem Sản Phẩm</a>
+  </div>
+  <div class="line-shop">
+    <div class="line-min"></div>
+</div>
+  <ul class="cards">
+    <li>
+      <a href="./sanpham.html" class="card">
+        <img src="./assets/img/banner/pancake1.png" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" ><path /></svg>                     
+            <img class="card__thumb" src="./assets/img/banner/pancake.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">PanCake</h3>            
+              <span class="card__status">50K</span>
+            </div>
+          </div>
+          <p class="card__description">PanCake truyền thống, mang hương vị của nước Pháp trong từng miếng bánh.</p>
+        </div>
+      </a>      
+    </li>
+
+    <li>
+      <a href="./sanpham.html" class="card">
+        <img src="./assets/img/banner/pancake2.png" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" ><path /></svg>                     
+            <img class="card__thumb" src="./assets/img/banner/pancake.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">pancake Trà Xanh</h3>            
+              <span class="card__status">45K</span>
+            </div>
+          </div>
+          <p class="card__description">PanCake Trà Xanh, với hương vị đắng nhẹ của trà xanh đó là một sự kết hợp hoàn hảo. </p>
+        </div>
+      </a>      
+    </li>
+
+    <li>
+      <a href="./sanpham.html" class="card">
+        <img src="./assets/img/banner/bakery2.png" class="card__image" alt="" />
+        <div class="card__overlay">        
+          <div class="card__header">
+            <svg class="card__arc"><path /></svg>                 
+            <img class="card__thumb" src="./assets/img/banner/bakery.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">Bánh Mì Đen</h3>
+              <span class="card__status">30K</span>
+            </div>
+          </div>
+          <p class="card__description">Bánh mì đen làm từ 100% bột lúa mạch đen thiên nhiên, thích hợp với người nhạy cảm với gliten</p>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="" class="card">
+        <img src="./assets/img/banner/bakery1.jpg" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" ><path /></svg>                     
+            <img class="card__thumb" src="./assets/img/banner/bakery.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">CupCakes</h3>
+              <span class="card__status">55K</span>
+            </div>
+          </div>
+          <p class="card__description">CupCakes mang nhiều hương vị và hình thức khác nhau vô cùng đẹp mắt.</p>
+        </div>
+      </a>
+    </li>    
+  </ul>
+</div>
+
+<div class="card-area">
+  <div class="logomenu">
+    <img src="./assets/img/banner/green-tea.png" alt="" class="img-responsive">
+    <a href="">Xem Sản Phẩm</a>
+  </div>
+  <div class="line-shop">
+    <div class="line-min"></div>
+</div>
+  <ul class="cards">
+    <li>
+      <a href="" class="card">
+        <img src="./assets/img/banner/coffee.jpg" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" ><path /></svg>                     
+            <img class="card__thumb" src="./assets/img/banner/coffee-cup (1).png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">Coffee-cup</h3>            
+              <span class="card__status">25K</span>
+            </div>
+          </div>
+          <p class="card__description">Cà phê cốc giấy vô cùng thân thiện bên cạnh đó hương vị vô cùng tuyệt hảo.</p>
+        </div>
+      </a>      
+    </li>
+
+    <li>
+      <a href="" class="card">
+        <img src="./assets/img/banner/milktea.jpg" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" ><path /></svg>                     
+            <img class="card__thumb" src="./assets/img/banner/bubble-tea.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">Trà Sữa</h3>            
+              <span class="card__status">45K</span>
+            </div>
+          </div>
+          <p class="card__description">Trà Sữa trân châu đường đen vô cùng hấp dẫn.</p>
+        </div>
+      </a>      
+    </li>
+
+    <li>
+      <a href="" class="card">
+        <img src="./assets/img/banner/milktea1.jpg" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" ><path /></svg>                     
+            <img class="card__thumb" src="./assets/img/banner/bubble-tea.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">Trà Sữa Matcha</h3>            
+              <span class="card__status">45K</span>
+            </div>
+          </div>
+          <p class="card__description">Trà sữa matcha đem lại cho mọi người một hương vị tuy lại mà quen, hương vị tuyệt hảo.</p>
+        </div>
+      </a>      
+    </li>
+
+    <li>
+      <a href="" class="card">
+        <img src="./assets/img/banner/cocktail1.jpg" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" ><path /></svg>                     
+            <img class="card__thumb" src="./assets/img/banner/cocktail.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">Trà Giải Nhiệt</h3>
+              <span class="card__status">40K</span>
+            </div>
+          </div>
+          <p class="card__description">Thời tiết nóng bức, vậy tại sao không nhắc máy lên gọi cho chúng tôi để có trong tay ly trà thơm ngon.</p>
+        </div>
+      </a>
+    </li>    
+  </ul>
+
+</div>
+<!-- ===================================End Menu================================== -->
+<!-- ========================================Liên Hệ============================== -->
+<div id="contact-area">
+<div class="title"><h1>Liên Hệ</h1></div>
+<div class="contact" id="contact">
+  <div class="content">
+    <div class="row">
+      <div class="card reveal">
+        <div class="contact-icon">
+          <i class="style-icon fas fa-map-marker-alt"></i>
+        </div>
+        <div class="info">
+          <h3>Địa Chỉ</h3>
+          <span>161 D5, Bình Thạnh, TP.HCM </span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="contact-icon">
+          <i class="style-icon fas fa-phone"></i>
+        </div>
+        <div class="info">
+          <h3>Phone</h3>
+          <span>+(1180) 036 973</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="contact-icon">
+          <i class="style-icon fas fa-envelope"></i>
+        </div>
+        <div class="info">
+          <h3>Email</h3>
+          <span>MoonBakery@email.com</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="contact-icon">
+          <i class="style-icon fab fa-facebook-f"></i>
+        </div>
+        <div class="info">
+          <h3>Facebook</h3>
+          <span>MoonBakery</span>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="contact-icon">
+          <i class="style-icon fas fa-truck"></i>
+        </div>
+        <div class="info">
+          <h3>Shippers</h3>
+          <span>+(0188) 369 737</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- ========================================Kết Thúc Liên Hệ============================== -->
+
+<!-- =========================================== Bắt Đầu Footer===================================== -->
+
+<footer class="footer_area">
+    <div class="footer_widgets">
+        <div class="footer_container">
+          <div id="footer-img">                  
+              <img src="./assets/img/banner/logomoon.png" alt="">
+              <h2>Thank you and see you again</h2>
+          </div>
+            <div class="footer_wd_inner">
+                <div class="footer-more">
+                    <aside class="f_widget f_link_widget">
+                        <div class="f_title">
+                            <h3>Thời Gian Hoạt Động</h3>
+                        </div>
+                        <ul class="list_style">
+                            <li><a href="#">T.2,T.6 : 8 am - 8 pm</a></li>
+                            <li><a href="#">T.7 : 9am - 4pm</a></li>
+                            <li><a href="#">CN. : Đóng cửa</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="footer-more">
+                    <aside class="f_widget f_contact_widget">
+                        <div class="f_title">
+                            <h3>Thông Tin</h3>
+                        </div>
+                        <h4>+(1180) 036 973 </h4>
+                        <p>Địa Chỉ: <br />161, D5, Bình Thạnh, TP.HCM</p>
+                        <h5>MoonBakery@gmail.com</h5>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+<!-- ===========================================Kết Thúc Footer================================ -->
+
+
+  </body>
+</html>
